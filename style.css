@@ -1,0 +1,49 @@
+.box{
+	margin: 40px;
+	font-size: 20px;
+	padding: 10px;
+}
+.box::before{
+	content: "!!!!";
+	color: red;
+	font-size: 50px;
+	font-weight: bold;
+}
+.box::after{
+	content: "";
+	display: inline-block;
+	border: 1px solid red;
+	width: 30px;
+	height: 30px;
+	background: url(../img/icon-warning.png);
+}
+.container{
+	max-width: 1000px;
+	margin: 0px auto;
+}
+.boxs-1{
+	margin-top: 30px;
+	background: pink;
+	padding: 20px 0;
+}
+.boxs-1 p{
+	background: red;
+}
+.img-wrap{
+	border:2px solid red;
+	float: left;
+	opacity: 0.5;
+}
+
+
+.boxs-2{
+	padding: 10px;
+	background: green;
+
+}
+.boxs-1::after{
+	content: "";
+	clear: both;
+	display: block;
+
+}
